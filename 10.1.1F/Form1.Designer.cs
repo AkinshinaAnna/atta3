@@ -96,9 +96,8 @@
             this.OutputListlabel.AutoSize = true;
             this.OutputListlabel.Location = new System.Drawing.Point(255, 326);
             this.OutputListlabel.Name = "OutputListlabel";
-            this.OutputListlabel.Size = new System.Drawing.Size(35, 13);
+            this.OutputListlabel.Size = new System.Drawing.Size(0, 13);
             this.OutputListlabel.TabIndex = 4;
-            this.OutputListlabel.Text = "label2";
             // 
             // menuStrip1
             // 
@@ -122,14 +121,14 @@
             // MainMenuFileOpen
             // 
             this.MainMenuFileOpen.Name = "MainMenuFileOpen";
-            this.MainMenuFileOpen.Size = new System.Drawing.Size(152, 22);
+            this.MainMenuFileOpen.Size = new System.Drawing.Size(132, 22);
             this.MainMenuFileOpen.Text = "Открыть";
             this.MainMenuFileOpen.Click += new System.EventHandler(this.MainMenuFileOpen_Click);
             // 
             // MainMenuFileSave
             // 
             this.MainMenuFileSave.Name = "MainMenuFileSave";
-            this.MainMenuFileSave.Size = new System.Drawing.Size(152, 22);
+            this.MainMenuFileSave.Size = new System.Drawing.Size(132, 22);
             this.MainMenuFileSave.Text = "Сохранить";
             this.MainMenuFileSave.Click += new System.EventHandler(this.MainMenuFileSave_Click);
             // 

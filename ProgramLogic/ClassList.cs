@@ -20,25 +20,28 @@ namespace ProgramLogic
             this.Line = line;
         }
 
-        public  List<int> Result()
+        public List<int> Result()
         {
-            List<int> indexes = new List<int>();
             List<int> result = new List<int>();
-            List<int> counted = new List<int>();
-            for (int i = 0; i < Line.Count - 1; i++)
+
+            for (int i = 0; i < Line.Count; i++)
             {
+                List<int> indexes = new List<int>();
+
                 for (int j = i; j < Line.Count; j++)
                 {
-                    if (Line[i].IsParallel(Line[j]) && !counted.Contains(j))
+                    if (Line[i].IsParallel(Line[j]))
                     {
-                        counted.Add(j);
                         indexes.Add(j);
                     }
                 }
-                if (indexes.Count > result.Count) result = indexes;
-                indexes.Clear();
+
+                if (indexes.Count > result.Count) result = new List<int>(indexes);
             }
+
             return result;
         }
+
+       
     }
 }

@@ -14,7 +14,8 @@ namespace ProgramLogic
             return File.ReadAllText(path);
         }
 
-        public static void WriteStringToFile(string path, string str)
+       
+        public static void Write(string path, string str)
         {
             File.WriteAllLines(path, new string[] { str });
         }

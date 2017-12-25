@@ -37,7 +37,7 @@ namespace ProgramLogic
 
             foreach (Line coefficient in coefficients)
             {
-                lines.Add(coefficient.A + " " + coefficient.B + " "+ coefficient.C+" ");
+                lines.Add(coefficient.A + " " + coefficient.B + " " + coefficient.C + " ");
             }
 
             File.WriteAllLines(path, lines);
